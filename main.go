@@ -953,7 +953,6 @@ func main() {
 							fmt.Printf("thanks for buying %v natural water bottles \n", number)
 							fmt.Println("heres your order code:", rand.Int())
 							time.Sleep(1200 * time.Millisecond)
-
 						}
 					}
 
