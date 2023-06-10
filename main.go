@@ -873,6 +873,7 @@ func main() {
 		if noNo == "no" {
 			fmt.Println("ok then bye see you next time", name)
 			break
+
 		} else {
 			fmt.Println("do you want to use the same email that is ", email, "(yes or no)")
 			fmt.Scan(&Input)
@@ -962,6 +963,7 @@ func main() {
 						fmt.Println("ok then bye see you next time", name)
 						break
 					} else {
+
 						fmt.Println("do you want to use the same email that is ", email, "(yes or no)")
 						fmt.Scan(&Input)
 						if Input == "no" {
