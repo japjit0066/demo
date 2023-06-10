@@ -956,11 +956,9 @@ func main() {
 							time.Sleep(1200 * time.Millisecond)
 						}
 					}
-
 					fmt.Println("do you want to buy more water ? (yes or no)")
 					fmt.Scan(&noNo)
 					if noNo == "no" {
-						fmt.Println("ok then bye see you next time", name)
 						break
 					} else {
 
@@ -968,15 +966,20 @@ func main() {
 						fmt.Scan(&Input)
 						if Input == "no" {
 							break
-						} else {
-							continue
+
 						}
 
 					}
 				}
+				fmt.Println("are you sure (yes or no)")
+				fmt.Scan(&Input)
+				if Input == "yes" {
+					fmt.Println("ok bye see you next time")
+					break
+				}
+
 			}
 		}
-
 	}
 }
 
