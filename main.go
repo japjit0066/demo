@@ -219,21 +219,3 @@ func main() {
 		}
 	}
 }
-
-// func main() {
-// 	var pl = fmt.Println
-// 	i := 1
-// 	for ; i <= 100; i++ {
-
-// 		if (i >= 1) && (i <= 18) {
-// 			pl(i, "", "important birthday")
-// 		} else if (i == 21) || (i == 50) {
-// 			pl(i, "", "important birthday ")
-// 		} else if (i >= 80) && (i <= 100) {
-// 			pl(i, "", "really important birthday")
-// 		} else {
-// 			pl(i, "", "not important birthday")
-// 		}
-
-// 	}
-// }
