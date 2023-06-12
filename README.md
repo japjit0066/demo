@@ -5,4 +5,5 @@ but it works
 you can use it like this but it can get hacked
 you can use it for pactice 
 you can clone it our copy the code
+please
 # enjoy and have fun
