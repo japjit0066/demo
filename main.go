@@ -46,7 +46,6 @@ func main() {
 				continue
 
 			} else {
-
 				time.Sleep(500 * time.Millisecond)
 				fmt.Println("how many bottles : ")
 				fmt.Scan(&number)
