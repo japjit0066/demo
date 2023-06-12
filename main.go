@@ -42,7 +42,8 @@ func main() {
 			fmt.Println("do you want to buy flavoured water (yes or no) ")
 			fmt.Scan(&yesNo)
 			if yesNo == "no" {
-				fmt.Println("ok bye see you next time ")
+				fmt.Println("ok choose again")
+				continue
 
 			} else {
 
@@ -64,8 +65,8 @@ func main() {
 			fmt.Println("do you want to buy sparkling water (yes or no) ")
 			fmt.Scan(&yesNo)
 			if yesNo == "no" {
-				fmt.Println("ok bye see you next time ")
-
+				fmt.Println("ok choose again")
+				continue
 			} else {
 
 				time.Sleep(500 * time.Millisecond)
@@ -86,8 +87,8 @@ func main() {
 			fmt.Println("do you want to buy natural water (yes or no) ")
 			fmt.Scan(&yesNo)
 			if yesNo == "no" {
-				fmt.Println("ok bye see you next time ")
-
+				fmt.Println("ok choose again")
+				continue
 			} else {
 
 				time.Sleep(500 * time.Millisecond)
@@ -115,10 +116,11 @@ func main() {
 			if Input == "no" {
 				fmt.Println("please enter your email :")
 				fmt.Scan(&email)
+				fmt.Println("we will use this email for your order", email)
 				continue
 			} else {
 				for {
-					fmt.Println("we will use this email for your order", email)
+
 					fmt.Println("we have three type of water")
 					time.Sleep(200 * time.Millisecond)
 					fmt.Println("flavoured  , sparkling  , natural ")
@@ -136,8 +138,8 @@ func main() {
 						fmt.Println("do you want to buy flavoured water (yes or no) ")
 						fmt.Scan(&yesNo)
 						if yesNo == "no" {
-							fmt.Println("ok bye see you next time ")
-
+							fmt.Println("ok choose again ")
+							continue
 						} else {
 							time.Sleep(500 * time.Millisecond)
 							fmt.Println("how many bottles : ")
@@ -157,8 +159,8 @@ func main() {
 						fmt.Println("do you want to buy sparkling water (yes or no) ")
 						fmt.Scan(&yesNo)
 						if yesNo == "no" {
-							fmt.Println("ok bye see you next time ")
-
+							fmt.Println("ok choose again ")
+							continue
 						} else {
 							time.Sleep(500 * time.Millisecond)
 							fmt.Println("how many bottles : ")
@@ -178,8 +180,8 @@ func main() {
 						fmt.Println("do you want to buy natural water (yes or no) ")
 						fmt.Scan(&yesNo)
 						if yesNo == "no" {
-							fmt.Println("ok bye see you next time ")
-
+							fmt.Println("ok choose again ")
+							continue
 						} else {
 							var email string
 							time.Sleep(500 * time.Millisecond)
@@ -202,8 +204,10 @@ func main() {
 						fmt.Println("do you want to use the same email that is ", email, "(yes or no)")
 						fmt.Scan(&Input)
 						if Input == "no" {
-							break
-
+							fmt.Println("please enter your email :")
+							fmt.Scan(&email)
+							fmt.Println("we will use this email for your order", email)
+							continue
 						}
 
 					}
@@ -214,7 +218,10 @@ func main() {
 					fmt.Println("ok bye see you next time")
 					break
 				}
-
+				if Input == "no" {
+					fmt.Println("okay then lets continue")
+					continue
+				}
 			}
 		}
 	}
