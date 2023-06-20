@@ -31,7 +31,7 @@ package main
 // 		pl("ok then lets tell you the date !!!")
 // 		pl(now.Day(), "/", now.Month(), "/", now.Local().Year())
 // 		pl("and the time is :")
-// 		pl(now.Hour(), ":", now.Local().Minute(), ":", now.Local().Second())
+// 		pl(now.Hour(), ":", now.Local().Minute(), ":", now.Local().Second(), ":", now.Local().UnixMilli())
 
 // 	}
 // }
