@@ -1,16 +1,26 @@
 package main
 
-// func main() {
-// 	var user = []map[string]string{{"firstname": "japjit", "lastname": "singh", "address": "santa caterina"}, {"firstname": "inderjit", "lastname": "singh", "address": "santa caterina"}, {"firstname": "deepkiran", "lastname": "kaur", "address": "santa caterina"}, {"firstname": "maxi", "lastname": "singh", "address": "santa caterina"}, {"firstname": "norda", "lastname": "marchiho", "address": "santa caterina"}, {"firstname": "labello", "lastname": "milano", "address": "santa caterina"}, {"firstname": "kokett", "lastname": "premium", "address": "santa caterina"}, {"firstname": "celebrations", "lastname": "brand", "address": "santa caterina"}, {"firstname": "la roche", "lastname": "posay", "address": "santa caterina"}, {"firstname": "italpizza", "lastname": "numero", "address": "santa caterina"}}
+// import (
+// 	"fmt"
+// )
 
-// 	changeArr(user, 0, "hello name changed")
+// func main() {
+// 	var user = []map[string]string{{}}
+// 	changeArr(user, 0, "firstname", "hello name changed")
+// 	fmt.Println(user)
+// 	ddArr(user, "firstname", "hello added changed")
 // 	fmt.Println(user)
 
 // }
 
-// func changeArr(user []map[string]string, i int, name string) []map[string]string {
+// func changeArr(user []map[string]string, i int, t string, name string) []map[string]string {
 
-// 	user[i]["firstname"] = name
+// 	user[i][t] = name
 
+// 	return user
+// }
+// func ddArr(user []map[string]string, t string, name string) []map[string]string {
+// 	add := map[string]string{t: name}
+// 	user = append(user, add)
 // 	return user
 // }
